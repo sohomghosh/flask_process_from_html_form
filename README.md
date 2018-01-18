@@ -43,9 +43,9 @@ if __name__ == '__main__':
 
 ``` 
  
-//In the folder containing the flask code suppose flask_api_make.py </br>
+//In the folder containing the flask code suppose flask_api_make.py change permission of the flask_api_make.py and keep running it in the background</br>
 chmod +x flask_api_make.py </br>
-python3 flask_api_make.py </br>
+nohup python3 flask_api_make.py &</br>
  </br>
 #Source: https://stackoverflow.com/questions/12277933/send-data-from-a-textbox-into-flask  </br>
  </br>
