@@ -4,10 +4,13 @@
 #How to run?</br>
 #Create a folder /templates, keep html file here my-form.html inside /templates</br>
 #Write the following code in this html form </br>
-<form method="POST"> </br>
-    <input name="text"> </br>
-    <input type="submit"> </br>
-</form> </br>
+
+```
+<form method="POST"> 
+    <input name="text">
+    <input type="submit">
+</form>
+```
  </br>-------------------------------------------- </br>
 In the folder just outside templates </br>
 vi flask_api_make.py </br>
