@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 ``` 
  
-//In the folder containing the flask code suppose flask_api_make.py change permission of the flask_api_make.py and keep running it in the background</br>
+#In the folder containing the flask code suppose flask_api_make.py change permission of the flask_api_make.py and keep running it in the background</br>
 chmod +x flask_api_make.py </br>
 nohup python3 flask_api_make.py &</br>
  </br>
