@@ -1,13 +1,6 @@
 # flask_process_from_html_form
 #Taking data input from a html form using flask, doing calculations over this input, return a json stating location of generated file.
 
-from pymongo import MongoClient
-from flask import Flask, request, render_template
-from flask import jsonify
-from flask_cors import CORS, cross_origin
-from datetime import datetime
-
-
 #How to run?
 #Create a folder /templates, keep html file here my-form.html inside /templates
 #Write the following code in this html form
@@ -20,11 +13,15 @@ In the folder just outside templates,
 vi flask_api_make.py
 
 #Paste the following lines
-from flask import Flask, request, render_template
+from pymongo import MongoClient
+from flask import Flask, request, render_template, jsonify
+from flask_cors import CORS, cross_origin
+from datetime import datetime
 
 app = Flask(__name__)
 CORS(app, support_credentials=True)
 
+@cross_origin(supports_credentials=True)
 @app.route('/')
 def my_form():
     return render_template('my-form.html')
