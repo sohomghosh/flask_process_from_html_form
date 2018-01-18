@@ -16,25 +16,33 @@ In the folder just outside templates </br>
 vi flask_api_make.py </br>
  </br>
 #Paste the following lines </br>
-from pymongo import MongoClient </br>
-from flask import Flask, request, render_template, jsonify </br>
-from flask_cors import CORS, cross_origin </br>
-from datetime import datetime </br>
- </br>
-app = Flask(__name__) </br>
-CORS(app, support_credentials=True) </br>
- </br>
-@cross_origin(supports_credentials=True) </br>
-@app.route('/') </br>
-def my_form(): </br>
-    return render_template('my-form.html') </br>
- </br>
-@app.route('/', methods=['POST']) </br>
-def my_form_post(): </br>
-    text = request.form['text'] </br>
-    processed_text = text.upper() </br>
-    return processed_text </br>
- </br>
+```
+from pymongo import MongoClient
+from flask import Flask, request, render_template, jsonify
+from flask_cors import CORS, cross_origin
+from datetime import datetime
+
+app = Flask(__name__)
+CORS(app, support_credentials=True)
+
+@cross_origin(supports_credentials=True)
+@app.route('/')
+def my_form():
+    return render_template('my-form.html')
+
+@app.route('/', methods=['POST'])
+def my_form_post():
+    text = request.form['text']
+    processed_text = text.upper()
+    return processed_text
+ 
+
+if __name__ == '__main__':
+    app.debug = True
+    app.run(host="172.189.189.190",debug=True)
+
+``` 
+ 
 //In the folder containing the flash code suppose flask_api_make.py </br>
 chmod +x flask_api_make.py </br>
 python3 flask_api_make.py </br>
