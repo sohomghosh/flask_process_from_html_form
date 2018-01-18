@@ -43,7 +43,7 @@ if __name__ == '__main__':
 
 ``` 
  
-//In the folder containing the flash code suppose flask_api_make.py </br>
+//In the folder containing the flask code suppose flask_api_make.py </br>
 chmod +x flask_api_make.py </br>
 python3 flask_api_make.py </br>
  </br>
