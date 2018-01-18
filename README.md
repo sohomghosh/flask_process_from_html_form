@@ -8,8 +8,8 @@
     <input name="text"> </br>
     <input type="submit"> </br>
 </form> </br>
---------------------------------------------
-In the folder just outside templates, </br>
+ </br>-------------------------------------------- </br>
+In the folder just outside templates </br>
 vi flask_api_make.py </br>
  </br>
 #Paste the following lines </br>
